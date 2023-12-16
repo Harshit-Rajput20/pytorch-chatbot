@@ -23,6 +23,10 @@ def stem(word):
     return stemmer.stem(word.lower())
 
 
+ 
+words = ["Organize", "organizes", "organizing"]
+stemmed = [stem(w)  for w in words]
+ 
 def bag_of_words(tokenized_sentence, words):
     """
     return bag of words array:
